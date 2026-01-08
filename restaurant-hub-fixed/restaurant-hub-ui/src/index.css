@@ -1,0 +1,102 @@
+/* 🌍 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🎨 Root Theme */
+:root {
+    font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+
+    color-scheme: dark;
+    color: rgba(255, 255, 255, 0.95);
+
+    background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🖥 Body */
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #1e293b
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ⚡ Root App Container */
+#root {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+/* 🍽 Glass Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* 🔘 Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    border: none;
+    border-radius: 14px;
+    padding: 0.75rem 1.6rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(249, 115, 22, 0.45);
+}
+
+/* 📝 Inputs */
+input {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0.75rem;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #f97316;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ✨ Headings */
+h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+/* 🌈 Accent Text */
+.accent {
+    color: #f97316;
+}
